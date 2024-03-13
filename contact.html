@@ -14,8 +14,8 @@
 
 <body>
     <header class="container">
-        <nav class="nav_bar">
-            <div>
+        <nav class="nav_bar_top">
+            <div class="d-flex justify-content-between align-items-center">
                 <img src="./asset/images/logo.png" class="logo" alt="logo">
                 <ul class="nav_left">
                     <li>
@@ -27,62 +27,50 @@
                     <li>
                         <a href="" class="list_icon"><ion-icon name="logo-facebook"></ion-icon></a>
                     </li>
+                    <li>
+                        <div class="px-3">|</div>
+                    </li>
                     <li class="link_text text-black">
                         <a href=""><i class="bi bi-telephone"></i>86673 50673 </a>
                     </li>
+                    <li>
+                        <div class="px-3">|</div>
+                    </li>
                     <li class="link_text">
-                        <i class="bi bi-search"></i><input type="text" placeholder="search">
+                        <div class="form-control">
+                            <i class="bi bi-search"></i><input type="text" placeholder="search">
+                        </div>
+
 
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <nav class=" navbar navbar-expand-lg ">
-            <div class=" container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./about_us.html">About Us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="./insurance.html" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Insurance
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Auto Finance</a></li>
-                                <li><a class="dropdown-item" href="#">Life Finance</a></li>
-                                <li><a class="dropdown-item" href="#">Business Finance</a></li>
-                                <li><a class="dropdown-item" href="#">Travel Finance</a></li>
-                                <li><a class="dropdown-item" href="#">Home Finance</a></li>
-                                <li><a class="dropdown-item" href="#">Other</a></li>
 
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./agents.html">Agents</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                    <button class="btn btn-outline-success rounded-pill" type="submit">GET A QUOTE</button>
+        <nav class="nav-bar_nav">
+            <div class="logo">
+                <img src="./asset/images/logo.png" class="img-fluid rounded-top" alt="" />
+
+            </div>
+            <div class="container nav-bar ">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about_us.html">About Us</a></li>
+                    <li><a href="./insurance.html">Insurance</a></li>
+                    <li><a href="./agents.html">Agents</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <div class="btn-quote">
+                    <a href="">GET A QUOTE</a>
                 </div>
+
+            </div>
+            <div class="menu">
+                <i class="bi bi-list"></i>
             </div>
         </nav>
-
     </header>
     <main>
         <section id="innerbanner container-fluid">

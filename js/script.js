@@ -28,3 +28,10 @@ for (let index = 0; index < accordion.length; index++) {
     this.classList.toggle("active");
   });
 }
+
+// navbar
+const menu = document.querySelector(".menu");
+const menulist = document.querySelector("nav .nav-bar");
+menu.addEventListener("click", function () {
+  menulist.classList.toggle("showmenu");
+});
