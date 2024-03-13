@@ -590,3 +590,40 @@ outline: none;
 border: 1px solid gray;
 background: none;
 }
+/* insurance */
+.insurance a{
+    text-decoration: none;
+    color: rgb(0, 0, 158);
+   font-size: 15px;
+}
+.insurance a i{
+    padding-left: 10px;
+}
+.quick_quote{
+    background-image: url(/asset/images/background-2.jpg);
+    width: 100%;
+    height: 600px;
+    background-position: center;
+   position: relative;
+    background-position-x: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+    
+}
+.quick_quote_body{
+background: white;
+position: absolute;
+
+/* left: 0; */
+top: 10%;
+/* bottom: 10%; */
+
+right: 50px;
+}   
+.quick_quote_body .quick_quote_content{
+    padding: 50px;
+}
+.footer-section{
+    margin-top: 0;
+}
