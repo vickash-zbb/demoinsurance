@@ -241,6 +241,13 @@ margin-left: 24px;
 .index-section2 div{
     padding: 24px;
 }
+.insurance a{
+    text-decoration: none;
+}
+.section_index_insurance {
+    background: #e2e2e2;
+    padding: 82px 0;
+}
 /*  */
 .bg_about{
     background-image: url(../asset/images/background-3.jpg);
