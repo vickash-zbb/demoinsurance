@@ -238,6 +238,10 @@ margin-left: 24px;
 }
 }
 /*  */
+.index-section2 div{
+    padding: 24px;
+}
+/*  */
 .bg_about{
     background-image: url(../asset/images/background-3.jpg);
     background-position: center;
