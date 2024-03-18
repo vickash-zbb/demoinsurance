@@ -137,7 +137,13 @@ body{
 
 
 
-
+.fixed{
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 1;
+    top: 0;
+}
 
 
 .nav_bar{
@@ -245,6 +251,11 @@ margin-left: 24px;
     text-decoration: none;
 }
 .section_index_insurance {
+    background: #e2e2e2;
+    padding: 82px 0;
+}
+/*  */
+.index_blog{
     background: #e2e2e2;
     padding: 82px 0;
 }
