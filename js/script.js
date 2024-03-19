@@ -66,28 +66,40 @@ const menulist = document.querySelector("nav .nav-bar");
 menu.addEventListener("click", function () {
   menulist.classList.toggle("showmenu");
 });
-// Function to animate the counting effect
+// Function to animate the counting effect// Function to animate the counting effect
 function animateCount(element, target, duration) {
   let start = 0;
   const step = Math.ceil(target / (duration / 30)); // Calculate step based on duration (30 frames per second)
   const timer = setInterval(function () {
     start += step;
-    element.innerText = start + "+";
+    element.innerText = start + "+"; // Add plus sign
     if (start >= target) {
-      element.innerText = target + "+";
+      element.innerText = target + "+"; // Add plus sign
       clearInterval(timer);
     }
-  }, 60);
+  }, 30);
 }
 
-// Function to trigger the counting animation for each number element
-function triggerCountAnimation() {
-  const numberElements = document.querySelectorAll(".number");
-  numberElements.forEach(function (numberElement) {
-    const target = parseInt(numberElement.getAttribute("data-count"));
-    animateCount(numberElement, target, 1000); // Adjust duration as needed
+// Intersection Observer callback function
+function handleIntersect(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const target = parseInt(entry.target.getAttribute("data-count"));
+      animateCount(entry.target, target, 1000); // Adjust duration as needed
+      observer.unobserve(entry.target); // Unobserve the target once animation starts
+    }
   });
 }
 
-// Trigger counting animation when the page is fully loaded
-window.addEventListener("load", triggerCountAnimation);
+// Create an Intersection Observer instance
+const observer = new IntersectionObserver(handleIntersect, {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.5,
+});
+
+// Observe each number element
+const numberElements = document.querySelectorAll(".number");
+numberElements.forEach(function (numberElement) {
+  observer.observe(numberElement);
+});

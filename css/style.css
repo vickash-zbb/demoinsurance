@@ -281,7 +281,7 @@ padding: 24px;
 .bg_about{
     background-image: url(../asset/images/background-3.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
    height: auto;
@@ -650,10 +650,13 @@ color: black;
     ol.breadcrumb {
         position: relative;
         top: 16px;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
     }
     .our_story {
         background-color: rgb(244 244 244);
-        padding: 44px 3% 862px 3%;
+        padding: 44px 3% 500px 3%;
     }
     .story_para {
        
@@ -678,7 +681,7 @@ flex-direction: column;
 margin-bottom: 100px;
 
     }
-}
+
 
 
 /* agent page */
@@ -837,7 +840,7 @@ background: none;
 background: white;
 position: absolute;
 
-left: 16px;
+/* left: 16px; */
 top: 10%;
 /* bottom: 10%; */
 
@@ -847,7 +850,10 @@ right: 16px;
     .quick_quote_contect{
         flex-direction: column;
     }
-    
+    .quick_quote_body{
+        left: 16px;
+    }
+
 }
 .quick_quote_body .quick_quote_content{
     padding: 50px;
