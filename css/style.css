@@ -132,7 +132,11 @@ body{
 }
 
 
-
+.cpm_achive span{ 
+font-size: 50px;
+color: var(--color--primary);
+font-weight: 600;
+}
 
 
 
@@ -254,6 +258,7 @@ display: none;
 .head-bg-content .mbl-contant{
 margin-top: 10%;
 margin-left: 24px;
+padding: 24px;
 }
 }
 /*  */
@@ -448,7 +453,7 @@ color: black;
     /* padding: 50px 30px ; */
 }
 .partner-logo{
-    padding: 16px 30px;
+    padding: 50px 30px;
 }
 .partner-content{
     display: flex;
@@ -619,13 +624,16 @@ color: black;
                 }
                 .call-us_body {
                     
-                    justify-content: flex-start;
+                    justify-content: center;
                 }
                 .footer_list {
                    flex-wrap: wrap;
                    padding-right: 50px;
+                   flex-direction: column;
                 }
-               
+               .view_insurance2>:first-child{
+                order: 2;
+               }
 }
 @media screen and (max-width:600px) {
     ul.nav_left {
@@ -829,12 +837,18 @@ background: none;
 background: white;
 position: absolute;
 
-/* left: 0; */
+left: 16px;
 top: 10%;
 /* bottom: 10%; */
 
-right: 50px;
+right: 16px;
 }   
+@media screen and  (max-width:992px) {
+    .quick_quote_contect{
+        flex-direction: column;
+    }
+    
+}
 .quick_quote_body .quick_quote_content{
     padding: 50px;
 }

@@ -66,3 +66,28 @@ const menulist = document.querySelector("nav .nav-bar");
 menu.addEventListener("click", function () {
   menulist.classList.toggle("showmenu");
 });
+// Function to animate the counting effect
+function animateCount(element, target, duration) {
+  let start = 0;
+  const step = Math.ceil(target / (duration / 30)); // Calculate step based on duration (30 frames per second)
+  const timer = setInterval(function () {
+    start += step;
+    element.innerText = start + "+";
+    if (start >= target) {
+      element.innerText = target + "+";
+      clearInterval(timer);
+    }
+  }, 60);
+}
+
+// Function to trigger the counting animation for each number element
+function triggerCountAnimation() {
+  const numberElements = document.querySelectorAll(".number");
+  numberElements.forEach(function (numberElement) {
+    const target = parseInt(numberElement.getAttribute("data-count"));
+    animateCount(numberElement, target, 1000); // Adjust duration as needed
+  });
+}
+
+// Trigger counting animation when the page is fully loaded
+window.addEventListener("load", triggerCountAnimation);
