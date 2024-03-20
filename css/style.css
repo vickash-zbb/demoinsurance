@@ -328,12 +328,7 @@ color: black;
     
 }
 /*  */
-.our_story{
-    background-color:rgb(244 244 244);
-    padding: 50px 7%;
-    
 
-}
 .story.head h2{
     margin-bottom: 50px;
 }
@@ -388,7 +383,7 @@ color: black;
 .accordion{
     /* width: 80%; */
     margin: auto;
-    margin-top: 100px;
+    /* margin-top: 100px; */
  
 }
 .accordion-tittle{
@@ -566,7 +561,7 @@ color: black;
     font-weight: 600;
 }
 .footer_list{
-    padding-right: 100px;
+    padding-right: 24px;
     justify-content: space-between;
 }
 .footer_input input{
@@ -611,9 +606,9 @@ color: black;
     .about_para {
                 bottom: 54px;
             }
-            .our_story {
+            /* .our_story {
                 background-color: rgb(244 244 244);
-                padding: 44px 3% 151px 3%;}
+                padding: 44px 3% 672px 3% !important; } */
                 .partner-content {
                     
                     flex-wrap: nowrap;
@@ -652,11 +647,14 @@ color: black;
         top: 16px;
         justify-content: center;
         padding-bottom: 10px;
+    } .footer_nav {
+      
+        display: initial !important;
     }
     }
     .our_story {
         background-color: rgb(244 244 244);
-        padding: 44px 3% 500px 3%;
+        padding: 38px 0 124px;
     }
     .story_para {
        
@@ -669,10 +667,7 @@ color: black;
     .partner-content {
         flex-wrap: wrap;
     }
-    .footer_nav {
-      
-        display: initial !important;
-    }
+   
     .footer_input .form-control {
     width: 100% !important;
     }
@@ -853,7 +848,12 @@ right: 16px;
     .quick_quote_body{
         left: 16px;
     }
-
+    .inner_page_container{
+      
+        bottom: 24px;
+   
+    
+    }
 }
 .quick_quote_body .quick_quote_content{
     padding: 50px;
