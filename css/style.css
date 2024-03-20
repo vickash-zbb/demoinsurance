@@ -68,6 +68,10 @@ body{
     border-radius: 8px;
     display: none;
 }
+.nav-bar .active{
+    color: var(--color--primary);
+    font-weight: 600;
+}
 .nav-bar_nav .logo{
     display: none;
 }
